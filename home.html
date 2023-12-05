@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="head">
+        <ul class="navbar">
+          <li class="nav-left" style="background-color: #65c2f5;"><a
+              href="http://localhost/weather-project/home.html">Weather App</a></li>
+          <li class="nav-left" style="background-color: #36439c;"><a
+              href="http://localhost/weather-project/home.html">Home</a></li>
+          <li class="nav-left"><a href="http://localhost/weather-project/recent-weather.html">Recent Weather</a></li>
+          <li class="nav-left"><a href="http://localhost/weather-project/contact.html">Contact</a></li>
+          <li class="search-box">
+            <form action="store-city.php" method="post">
+              <input type="text" name="cityName" id="city" placeholder="Search City...">
+              <button class="btn" type="submit" id="submit"><i class="fa fa-search">Search</i></button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="container">
+    <div class="heade-line">Weather at <span id="cityName"></span></div>
+
+    <div class="p-table">
+
+      <div class="p-card">
+        <h3>Temperature</h3>
+        <p>Hot temperature today</p>
+        <div class="price"><span id="temp"></span></div>
+        <ul>
+          <li>Feels Like <span id="feels_like"></span></li>
+          <li>Minimum Temp: <span id="min_temp"></span></li>
+          <li>Maximum Temp: <span id="max_temp"></span></li>
+        </ul>
+      </div>
+      <div class="p-card">
+        <h3>Humidity</h3>
+        <p>Amount of moisture in the air</p>
+        <div class="price"><span id="humidity"></span></div>
+        <ul>
+          <li>Cloud Pct <span id="cloud_pct"></span></li>
+          <li><span id=""></span></li>
+          <li><span id=""></span></li>
+        </ul>
+      </div>
+
+
+      <div class="p-card">
+        <h3>Wind Speed</h3>
+        <p>Wind flow and speed</p>
+        <div class="price"><span id="wind_speed"></span></div>
+        <ul>
+          <li>Wind Degrees <span id="wind_degrees"></span></li>
+          <li>Sunrise: <span id="sunrise"></span></li>
+          <li>Sunset: <span id="sunset"></span></li>
+        </ul>
+      </div>
+    </div>
+    <br>
+
+    <div class="nextPage">
+      <button onclick="navigateToPage()">See <span id="locationName"></span></button>
+    </div>
+
+
+    <div style="display: flex; justify-content: space-around;">
+      <div style="flex: 1; margin-right: 20px;">
+        <div class="hsi-head" style="text-align: center; margin-top: 30px;">
+          <h3 style="font-size: 30px; color: rgb(37, 102, 186);">Heat Stress Index</h3>
+          <div id="hsi-info" class="highlight-box" style="padding: 20px; border-radius: 10px; box-shadow: 5px 5px 15px rgba(15, 15, 15, 0.1); margin-top: 20px;">
+            <p style="font-size: 18px; margin: 10px 0;">
+              <span id="hsiLevel" class="highlight-title" style="font-weight: bold; color: #ffffff; font-size: 25px"></span>
+            </p>
+            <p style="font-size: 18px; margin: 10px 0;">
+              <span id="hsiAction" style="color: #000000;"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div style="flex: 1;">
+        <div class="aqi-head" style="text-align: center; margin-top: 30px;">
+          <h3 style="font-size: 30px; color: rgb(37, 102, 186);">Air Quality</h3>
+          <div id="aqi-info" class="highlight-box" style="padding: 20px; border-radius: 10px; box-shadow: 5px 5px 15px rgba(15, 15, 15, 0.1); margin-top: 20px;">
+            <p style="font-size: 18px; margin: 10px 0;">
+              <span id="aqiLevel" class="highlight-title" style="font-weight: bold; color: #ffffff; font-size: 25px"></span>
+            </p>
+            <p style="font-size: 18px; margin: 10px 0;">
+              <span id="aqiAction" style="color: #000000;"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+
+  <br><br><br><br>
+
+  <p style="color: #ffffff;"><span id = "co"></span>
+  <span id = "no2"></span>
+  <span id = "o3"></span>
+  <span id = "pm25"></span>
+  <span id = "pm10"></span>
+  <span id = "currTemp"></span>
+  <span id = "currWSpeed"></span>
+  <span id = "currWDegress"></span>
+  <span id = "currHum"></span></p>
+
+  </div>
+
+  <img src="image-source\beautiful-image.jpg" alt="Weather Image" style="width:100%;
+  height: 500px;
+  opacity: 1;">
+
+  <footer style="background-color: #7F865A; color: white; padding: 20px; text-align: center; margin-top: -10px">
+    <div class="footer-container" style="max-width: 800px; margin: 0 auto;">
+      <p>&copy; Copyright 2023 Weather Forecast Application<br>All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+
+</body>
+</html>

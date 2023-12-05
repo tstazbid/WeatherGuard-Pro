@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recent Search</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="head">
+        <ul class="navbar">
+          <li class="nav-left" style="background-color: #65c2f5;"><a
+              href="http://localhost/weather-project/home.html">Weather App</a></li>
+          <li class="nav-left"><a href="http://localhost/weather-project/home.html">Home</a></li>
+          <li class="nav-left" style="background-color: #36439c;"><a href="">Recent Weather</a></li>
+          <li class="nav-left"><a href="http://localhost/weather-project/contact.html">Contact</a></li>
+          <li class="search-box">
+            <form action="http://localhost/weather-project/home.html" method="GET">
+              <input type="text" placeholder="Search City..." name="cityName" id="cityName">
+              <button class="btn" type="submit" id="submit"><i class="fa fa-search">Search</i></button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="compare">
+    <div class="heade-line">Recent five cities you search</div>
+    <table>
+      <tr>
+        <th>Cities</th>
+        <th>Cloud Pct</th>
+        <th>Temp</th>
+        <th>Feels Like</th>
+        <th>Humidity</th>
+        <th>Max Temp</th>
+        <th>Min Temp</th>
+        <th>Wind Speed</th>
+        <th>Wind Degrees</th>
+        <th>Sunrise</th>
+        <th>Sunset</th>
+      </tr>
+      <tr>
+        <td style="text-align: left;"><span id="cityName1"></span></td>
+        <td><span id="cloud_pct1"></span></td>
+        <td><span id="temp1"></span></td>
+        <td><span id="feels_like1"></span></td>
+        <td><span id="humidity1"></span></td>
+        <td><span id="min_temp1"></span></td>
+        <td><span id="max_temp1"></span></td>
+        <td><span id="wind_speed1"></span></td>
+        <td><span id="wind_degrees1"></span></td>
+        <td><span id="sunrise1"></span></td>
+        <td><span id="sunset1"></span></td>
+      </tr>
+      <tr>
+        <td style="text-align: left;"><span id="cityName2"></span></td>
+        <td><span id="cloud_pct2"></span></td>
+        <td><span id="temp2"></span></td>
+        <td><span id="feels_like2"></span></td>
+        <td><span id="humidity2"></span></td>
+        <td><span id="min_temp2"></span></td>
+        <td><span id="max_temp2"></span></td>
+        <td><span id="wind_speed2"></span></td>
+        <td><span id="wind_degrees2"></span></td>
+        <td><span id="sunrise2"></span></td>
+        <td><span id="sunset2"></span></td>
+      </tr>
+      <tr>
+        <td style="text-align: left;"><span id="cityName3"></span></td>
+        <td><span id="cloud_pct3"></span></td>
+        <td><span id="temp3"></span></td>
+        <td><span id="feels_like3"></span></td>
+        <td><span id="humidity3"></span></td>
+        <td><span id="min_temp3"></span></td>
+        <td><span id="max_temp3"></span></td>
+        <td><span id="wind_speed3"></span></td>
+        <td><span id="wind_degrees3"></span></td>
+        <td><span id="sunrise3"></span></td>
+        <td><span id="sunset3"></span></td>
+      </tr>
+      <tr>
+        <td style="text-align: left;"><span id="cityName4"></span></td>
+        <td><span id="cloud_pct4"></span></td>
+        <td><span id="temp4"></span></td>
+        <td><span id="feels_like4"></span></td>
+        <td><span id="humidity4"></span></td>
+        <td><span id="min_temp4"></span></td>
+        <td><span id="max_temp4"></span></td>
+        <td><span id="wind_speed4"></span></td>
+        <td><span id="wind_degrees4"></span></td>
+        <td><span id="sunrise4"></span></td>
+        <td><span id="sunset4"></span></td>
+      </tr>
+      <tr>
+        <td style="text-align: left;"><span id="cityName5"></span></td>
+        <td><span id="cloud_pct5"></span></td>
+        <td><span id="temp5"></span></td>
+        <td><span id="feels_like5"></span></td>
+        <td><span id="humidity5"></span></td>
+        <td><span id="min_temp5"></span></td>
+        <td><span id="max_temp5"></span></td>
+        <td><span id="wind_speed5"></span></td>
+        <td><span id="wind_degrees5"></span></td>
+        <td><span id="sunrise5"></span></td>
+        <td><span id="sunset5"></span></td>
+      </tr>
+    </table>
+  </div>
+
+
+  <img src="image-source\relate-weather.jpg" alt="Weather Image" style="width:100%;
+  height: 500px;
+  opacity: 1;">
+  <footer style="background-color: #0463CA; color: white; padding: 20px; text-align: center; margin-top: -10px">
+    <div class="footer-container" style="max-width: 800px; margin: 0 auto;">
+      <p>&copy; Copyright 2023 Weather Forecast Application<br>All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts2.js"></script>
+</body>
+
+</html>
