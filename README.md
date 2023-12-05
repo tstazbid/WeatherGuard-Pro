@@ -1,5 +1,5 @@
-# ClimateGuard Pro
-ClimateGuard Pro is an innovative Weather Forecasting Application designed to deliver accurate and real-time weather information for various locations. This comprehensive solution not only provides essential weather details but also incorporates Air Quality Index (AQI) and Heat Stress Index (HSI) levels, ensuring citizens are well-informed and prepared for climate conditions.
+# WeatherGuard: Real-Time Forecasting with Air Quality and Climate Preparedness
+WeatherGuard is an innovative Weather Forecasting Application designed to deliver accurate and real-time weather information for various locations. This comprehensive solution not only provides essential weather details but also incorporates Air Quality Index (AQI) and Heat Stress Index (HSI) levels, ensuring citizens are well-informed and prepared for climate conditions.
 
 **Features:**
  - Accurate Weather Forecasting:
