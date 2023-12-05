@@ -70,53 +70,6 @@ header {
 }
 
 
-/*search box weather
-
-  .search-weather {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 800px;
-    margin: 0 auto;
-  }
-  .search-weather button {
-    padding: 10px 20px;
-    text-align: center;
-    color: #ffffff;
-    font-size: 15px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #0463CA;
-    transition: background-color 0.3s ease;
-    margin-left: 2px;
-    box-shadow: 0 0 10px rgba(23, 104, 162, 0.1);
-  }
-  .search-weather button:hover {
-    background: #034b9b;
-  }
-  
-  .search-weather input[type="text"] {
-    padding: 6px;
-    font-size: 17px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  */
-/* middle layer
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-    background-color: white;
-  }
-  */
-
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -191,7 +144,6 @@ header {
 }
 
 /* compare design*/
-
 .compare {
   padding-top: 20px;
   padding-left: 80px;
@@ -211,16 +163,6 @@ td {
   border-bottom: 1px solid #dee2e6;
 }
 
-/*
-  th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-  }
-
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  */
 
 .nextPage {
   margin: 0 auto;
@@ -250,8 +192,8 @@ td {
   background-color: #034b9b;
 }
 
-/* author details*/
 
+/* author details*/
 
 .author-info {
   display: flex;
@@ -304,18 +246,3 @@ td {
   width: 40px;
   height: 40px;
 }
-
-/*footer
-footer {
-  background-color: #0463CA;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-.footer-container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-*/

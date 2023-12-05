@@ -61,9 +61,9 @@ function addWithPercent(h) {
     return withP;
 }
 function addWithKM(h) {
-    let degree = 'km/h';
-    const withP = `${h} ${degree}`;
-    return withP;
+	let degree = 'm/s';
+	const withP = `${h} ${degree}`;
+	return withP;
 }
 function addWay(h) {
     let degree = '°';

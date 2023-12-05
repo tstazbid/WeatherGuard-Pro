@@ -12,7 +12,6 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-
 <body>
   <header>
     <nav>
@@ -50,7 +49,6 @@
           <li>Minimum Temp: <span id="min_temp"></span></li>
           <li>Maximum Temp: <span id="max_temp"></span></li>
         </ul>
-        <!--<button>Get Started</button>-->
       </div>
       <div class="p-card">
         <h3>Humidity</h3>
@@ -61,7 +59,6 @@
           <li><span id=""></span></li>
           <li><span id=""></span></li>
         </ul>
-        <!--<button>Get Started</button>-->
       </div>
 
 
@@ -74,7 +71,6 @@
           <li>Sunrise: <span id="sunrise"></span></li>
           <li>Sunset: <span id="sunset"></span></li>
         </ul>
-        <!--<button>Get Started</button>-->
       </div>
     </div>
     <br>
@@ -83,12 +79,51 @@
       <button onclick="navigateToPage()">See <span id="locationName"></span></button>
     </div>
 
+
+    <div style="display: flex; justify-content: space-around;">
+      <div style="flex: 1; margin-right: 20px;">
+        <div class="hsi-head" style="text-align: center; margin-top: 30px;">
+          <h3 style="font-size: 30px; color: rgb(37, 102, 186);">Heat Stress Index</h3>
+          <div id="hsi-info" class="highlight-box" style="padding: 20px; border-radius: 10px; box-shadow: 5px 5px 15px rgba(15, 15, 15, 0.1); margin-top: 20px;">
+            <p style="font-size: 18px; margin: 10px 0;">
+              <span id="hsiLevel" class="highlight-title" style="font-weight: bold; color: #ffffff; font-size: 25px"></span>
+            </p>
+            <p style="font-size: 18px; margin: 10px 0;">
+              <span id="hsiAction" style="color: #000000;"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div style="flex: 1;">
+        <div class="aqi-head" style="text-align: center; margin-top: 30px;">
+          <h3 style="font-size: 30px; color: rgb(37, 102, 186);">Air Quality</h3>
+          <div id="aqi-info" class="highlight-box" style="padding: 20px; border-radius: 10px; box-shadow: 5px 5px 15px rgba(15, 15, 15, 0.1); margin-top: 20px;">
+            <p style="font-size: 18px; margin: 10px 0;">
+              <span id="aqiLevel" class="highlight-title" style="font-weight: bold; color: #ffffff; font-size: 25px"></span>
+            </p>
+            <p style="font-size: 18px; margin: 10px 0;">
+              <span id="aqiAction" style="color: #000000;"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
   </div>
 
+  <br><br><br><br>
 
-
-  <!--<img src="https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Weather Image">-->
-
+  <p style="color: #ffffff;"><span id = "co"></span>
+  <span id = "no2"></span>
+  <span id = "o3"></span>
+  <span id = "pm25"></span>
+  <span id = "pm10"></span>
+  <span id = "currTemp"></span>
+  <span id = "currWSpeed"></span>
+  <span id = "currWDegress"></span>
+  <span id = "currHum"></span></p>
 
   </div>
 
@@ -103,7 +138,5 @@
   </footer>
   <script src="scripts.js"></script>
 
-
 </body>
-
 </html>
