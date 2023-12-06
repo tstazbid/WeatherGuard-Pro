@@ -20,7 +20,7 @@ WeatherGuard Pro is an innovative Weather Forecasting Application designed to de
 
 **Usage:**
 1. Clone the Repository:
-  - Run git clone [<repository_url>](https://github.com/tstazbid/WeatherGuard-Pro).
+  - Run git clone https://github.com/tstazbid/WeatherGuard-Pro.
 2. Install Dependencies:
   - Execute pip install -r requirements.txt.
 3. Run the Flask Server:
